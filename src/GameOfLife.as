@@ -17,13 +17,13 @@ package
 		
 		public function GameOfLife()
 		{
-			stage.scaleMode = "noScale";
-			stage.align = "TL";
 			stage ? ats() : this.addEventListener(Event.ADDED_TO_STAGE,ats);
 		}
 		
 		protected function ats(e:Event=null):void
 		{
+			stage.scaleMode = "noScale";
+			stage.align = "TL";
 			if(!isBuilt)
 				build();
 		}
